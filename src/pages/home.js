@@ -18,7 +18,7 @@ export default function Home() {
             const response = await api.post('/gift', data)
 
             if (response.data) {
-                const link = `https://giftapi.lucaspellison.now.sh/gift/${response.data.id}`;
+                const link = `https://gift4u.now.sh/gift/${response.data.id}`;
 
                 setLink(link);
                 setPage(3);
