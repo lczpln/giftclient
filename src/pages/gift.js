@@ -33,9 +33,9 @@ export default function Gift({ match }) {
                 </div>
             ) : (
                     <div>
-                        <h3>{message.author}</h3>
-                        <h3>{message.message}</h3>
-                        <h3>{message.to}</h3>
+                        <h3>Por: {message.author || 'Anônimo'}</h3>
+                        <h3>{message.message || 'Vazia.'}</h3>
+                        <h3>Para: {message.to || 'Não especificado.'}</h3>
                     </div>
                 )}
         </div>
